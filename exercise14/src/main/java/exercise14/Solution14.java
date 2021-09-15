@@ -5,18 +5,12 @@ package exercise14;
  *  Copyright 2021 Jacob Cordonero
  */
 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class Solution14 {
     /*
         Exercise 14 - Tax Calculator
-    You don’t always need a complex control structure to solve simple problems.
-    Sometimes a program requires an extra step in one case,
-    but in all other cases there’s nothing to do.
-    Write a simple program to compute the tax on an order amount.
-    The program should prompt for the order amount and the state.
-    If the state is “WI,” then the order must be charged 5.5% tax.
-    The program should display the subtotal, tax, and total for Wisconsin
-    residents but display just the total for non-residents.
-
         Example Output
     What is the order amount? 10
     What is the state? WI
@@ -35,6 +29,29 @@ public class Solution14 {
     ~Use a single output statement at the end of the program to display the program results.
      */
     public static void main(String[] args) {
+        //prompt the user for an order amount
+        //then prompt them for the state (initials)
+        //if they entered "WI"
+        //  display the subtotal  and tax
+        //then display the total
 
+        final double TAXRATE = 0.055;
+        final String WI = "WI";
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is the order amount? ");
+        String buffer = input.nextLine();
+        double money = Double.parseDouble(buffer);
+        double tax = 0.0;
+        System.out.print("What is the state? ");
+        buffer = input.nextLine();
+        DecimalFormat df = new DecimalFormat();
+        df.setMinimumFractionDigits(2);
+        df.setMaximumFractionDigits(2);
+        if (buffer.compareTo(WI)==0) {
+            tax = Math.round((money * TAXRATE) * 100)/100.0;
+            System.out.println("The subtotal is $"+ df.format(money) +".\n" +
+                    "The tax is $"+ df.format(tax) +".");
+        }
+        System.out.println("The total is $" + df.format(money + tax) + ".");
     }
 }
