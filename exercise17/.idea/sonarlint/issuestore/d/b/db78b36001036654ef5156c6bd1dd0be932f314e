@@ -1,7 +1,7 @@
 
 A
-java:S1659"&Declare "ADRWOMEN" on a separate line.(éĞŒÿÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(—†õö
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Æİêùÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èü±¨
+java:S1659"&Declare "ADRWOMEN" on a separate line.(éĞŒÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(—†õö
+S	java:S106""9Replace this use of System.out or System.err by a logger.(Æİêùÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èü±¨
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( œÎó

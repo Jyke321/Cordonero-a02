@@ -1,5 +1,10 @@
 package exercise18;
 
+/*
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Jacob Cordonero
+ */
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
