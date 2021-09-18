@@ -1,0 +1,8 @@
+
+=
+java:S1659"'Declare "TOP_RANGE" on a separate line.(Šáˆ¬
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æê¾şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¸İİÈ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(í÷óø8ÄËÒ²¿/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(Æİêùÿÿÿÿ8ÇËÒ²¿/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷äƒúûÿÿÿÿ
